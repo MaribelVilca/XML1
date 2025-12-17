@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "examen_sigi";
+$dbname = "maribel";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password);
@@ -141,7 +141,7 @@ if ($xml === false) {
     die("<p>Error al cargar el archivo XML.</p>");
 }
 
-echo "<h2>Inserción de datos desde el XML:</h2>";
+echo "<h2>Inserción desde el XML:</h2>";
 
 foreach ($xml->children() as $pe) {
     $codigo = $pe->codigo;
